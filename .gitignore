@@ -53,8 +53,5 @@ tags
 # Persistent undo
 [._]*.un~
 
-config/atom
-config/yarn
-config/configstore
-config/nvim/pack
+config
 

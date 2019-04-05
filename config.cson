@@ -1,0 +1,13 @@
+"*":
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
+      formatOnType: false
+  core:
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "SF Mono"
+  "exception-reporting":
+    userId: "1604a6d7-8ec3-4710-997b-186d8c0bd4b7"
+  welcome:
+    showOnStartup: false

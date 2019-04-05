@@ -26,6 +26,10 @@ link_dotfile() {
   link_to $(pwd)/$1 ~/.$1
 }
 
+link_config() {
+  link_to $(pwd)/$2 ~/.config/$1/$2
+}
+
 ###############################################################################
 # Preparation
 ###############################################################################
@@ -65,9 +69,15 @@ mkdir -p ~/dev
 
 echo ""
 echo "Linking dotfiles… "
-link_dotfile gitconfig
-link_dotfile config
-link_dotfile atom
+# link_dotfile gitconfig
+# link_dotfile config
+# link_dotfile atom
+mkdir -p ~/.config/nvim
+mkdir -p ~/.config/atom
+link_config nvim init.vim
+link_config atom keymap.cson
+link_config atom github.cson
+link_config atom config.cson
 
 echo ""
 echo "Updating macOS…"
@@ -88,7 +98,6 @@ else
   echo "Homebrew already installed."
 fi
 
-# TODO: Install Zsh, Zulu, and required plugins
 if ! grep -q "/usr/local/bin/zsh" /etc/shells; then
 	echo "Install and set default shell to be Zsh"
 	brew install zsh
