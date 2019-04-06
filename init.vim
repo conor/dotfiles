@@ -25,6 +25,9 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neco-vim'
+Plug 'Shougo/neoinclude.vim'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -70,7 +73,7 @@ set splitright                                     " Set more natural vertical s
 set backspace=eol,start,indent                     " Configure backspace so it acts as it should
 set fixeol                                         " Fix end of line on files that have none
 set wildignore=*.o,*~,*.pyc,*/.git/*,*/tmp/*,*.swp " Ignore files types
-set hid                                            " A buffer becomes hidden when it is abandoned
+set hidden                                         " A buffer becomes hidden when it is abandoned
 set ffs=unix,dos,mac                               " Use unix as the standard file type
 set nobackup                                       " No need for backup with version control
 set nowb                                           " No need for backup with version control
@@ -79,7 +82,7 @@ set nowritebackup                                  " Probably not needed on unix
 set autowrite                                      " Automatically write before running commands
 set title                                          " Set the title of the iterm tab
 set list listchars=tab:»·,trail:·                  " Display extra whitespace
-
+set statusline=%<\ [%f]\ %=[%{FugitiveHead()}]     " Super simple statusline
 
 try
   set switchbuf=useopen
@@ -237,3 +240,11 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:python3_host_prog = '/usr/local/bin/python3'
 let g:python_host_prog = '/usr/local/bin/python2'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Auto-complete Support
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_smart_case = 1
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
