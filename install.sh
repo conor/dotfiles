@@ -66,6 +66,7 @@ bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 echo ""
 echo "Creating ~/dev"
 mkdir -p ~/dev
+touch ~/dev/.metadata_never_index
 
 echo ""
 echo "Linking dotfiles… "
@@ -138,4 +139,5 @@ fi
 
 echo ""
 echo ""
-echo "Complete. Ready to code. **Important: Run fisher to load fish plugins."
+echo "Complete. Ready to code."
+echo "Important: Run fisher to load fish plugins."
