@@ -69,15 +69,18 @@ mkdir -p ~/dev
 
 echo ""
 echo "Linking dotfiles… "
-# link_dotfile gitconfig
 # link_dotfile config
 # link_dotfile atom
 mkdir -p ~/.config/nvim
 mkdir -p ~/.config/atom
+mkdir -p ~/.config/fish
 link_config nvim init.vim
 link_config atom keymap.cson
 link_config atom github.cson
 link_config atom config.cson
+link_config fish fishfile
+link_config fish config.fish
+link_dotfile gitconfig
 
 echo ""
 echo "Updating macOS…"
@@ -98,27 +101,12 @@ else
   echo "Homebrew already installed."
 fi
 
-if ! grep -q "/usr/local/bin/zsh" /etc/shells; then
-	echo "Install and set default shell to be Zsh"
-	brew install zsh
-	echo /usr/local/bin/zsh | sudo tee -a /etc/shells
-	chsh -s /usr/local/bin/zsh
-
-	echo "Install Zulu"
-	curl -L https://zulu.molovo.co/install | zsh && zsh
-	zulu install autosuggestions you-should-use completions almostontop git history-search-multi-word utility titles pure nvm-auto-use
-else
-	echo "Zsh and Zulu are already installed"
-fi
-
-
 echo "Installing tools, mac app store, and other apps via Homebrew…"
 brew update
 brew tap homebrew/bundle
 brew bundle
 brew upgrade
 brew cleanup
-
 
 echo "Installing Neovim python dependencies…"
 pip install --upgrade pip
@@ -134,30 +122,20 @@ if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
 fi
 nvim +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
 
+if ! grep -q "fish" /etc/shells; then
+  printf "\nChanging shell to Fish"
+  echo /usr/local/bin/fish | sudo tee -a /etc/shells
+  chsh -s /usr/local/bin/fish
 
+  printf "\nInstall Fisher"
+  curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+else
+  printf "\nFish shell and Fisher already installed"
+fi
 
 # apm install --packages-file atom-package-list.txt
 # apm list --installed --bare > atom-package-list.txt
 
 echo ""
 echo ""
-echo "Complete. Ready to code."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+echo "Complete. Ready to code. **Important: Run fisher to load fish plugins."

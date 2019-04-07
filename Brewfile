@@ -4,7 +4,7 @@
 
 tap "heroku/brew"
 
-brew "zsh"
+brew "fish"
 brew "git"
 brew "tree"
 brew "postgresql", restart_service: :changed
@@ -56,5 +56,5 @@ mas "Kaleidoscope", id: 587512244
 
 
 # Fonts
-cask "font-source-code-pro"
+cask "font-source-code-pro-for-powerline"
 cask "font-fira-mono"
