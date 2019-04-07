@@ -102,6 +102,14 @@ else
   echo "Homebrew already installed."
 fi
 
+
+if ! [ -x "$(command -v n)" ]; then
+  curl -L https://git.io/n-install | bash
+  echo 'n-install and n are now installed.'
+else
+  echo 'n is already installed'
+fi
+
 echo "Installing tools, mac app store, and other apps via Homebrew…"
 brew update
 brew tap homebrew/bundle
@@ -141,3 +149,4 @@ echo ""
 echo ""
 echo "Complete. Ready to code."
 echo "Important: Run fisher to load fish plugins."
+echo "Important: Run rbenv init."

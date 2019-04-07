@@ -12,7 +12,7 @@ brew "redis", restart_service: :changed
 brew "elixir"
 brew "heroku"
 brew "neovim"
-brew "nvm"
+brew "rbenv"
 brew "yarn"
 brew "python"
 brew "python@2"
