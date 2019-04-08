@@ -17,6 +17,7 @@ brew "yarn", args: ['ignore-dependencies']
 brew "python"
 brew "python@2"
 brew "ripgrep"
+brew "tmux"
 
 # Install Cask.
 tap "caskroom/cask"
