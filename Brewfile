@@ -56,5 +56,5 @@ mas "Kaleidoscope", id: 587512244
 
 
 # Fonts
-cask "font-source-code-pro-for-powerline"
+cask "font-source-code-pro"
 cask "font-fira-mono"
