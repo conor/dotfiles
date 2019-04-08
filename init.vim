@@ -172,6 +172,12 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Disable arrow keys
+noremap <right> <Nop>
+noremap <left> <Nop>
+noremap <up> <Nop>
+noremap <down> <Nop>
+
 " Weird hack for mapping <Alt+l> and <Alt+j> to split right and down
 map ¬ :vsp<cr>
 map ∆ :sp<cr>
