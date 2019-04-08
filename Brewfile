@@ -53,8 +53,3 @@ mas "LookUp", id: 965041401
 mas "Newton", id: 1059655371
 mas "Numbers", id: 409203825
 mas "Kaleidoscope", id: 587512244
-
-
-# Fonts
-cask "font-source-code-pro"
-cask "font-fira-mono"
