@@ -82,6 +82,7 @@ link_config atom config.cson
 link_config fish fishfile
 link_config fish config.fish
 link_dotfile gitconfig
+link_dotfile tmux.conf
 
 echo ""
 echo "Updating macOS…"
