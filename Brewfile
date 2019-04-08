@@ -13,7 +13,7 @@ brew "elixir"
 brew "heroku"
 brew "neovim"
 brew "rbenv"
-brew "yarn"
+brew "yarn", args: ['ignore-dependencies']
 brew "python"
 brew "python@2"
 brew "ripgrep"
