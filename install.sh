@@ -103,10 +103,9 @@ else
   echo "Homebrew already installed."
 fi
 
-
 if ! [ -x "$(command -v n)" ]; then
   curl -L https://git.io/n-install | bash
-  echo 'n-install and n are now installed.'
+  echo 'n-install and n are now installed'
 else
   echo 'n is already installed'
 fi
@@ -142,6 +141,10 @@ if ! grep -q "fish" /etc/shells; then
 else
   printf "\nFish shell and Fisher already installed"
 fi
+
+# Install or update Tuple.app
+curl -L https://git.io/tuple-install | bash
+
 
 # apm install --packages-file atom-package-list.txt
 # apm list --installed --bare > atom-package-list.txt
