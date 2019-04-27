@@ -14,6 +14,8 @@ alias gbd="git branch -d"
 alias gaa="git add ."
 alias gm="git merge"
 alias gr="git rebase"
+alias gps="git push"
+alias gpl="git pull"
 
 # Config for Pure theme
 set pure_symbol_prompt '→'
