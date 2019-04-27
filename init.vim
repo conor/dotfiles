@@ -28,6 +28,7 @@ Plug 'alvan/vim-closetag'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neco-vim'
 Plug 'Shougo/neoinclude.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Add plugins to &runtimepath
 call plug#end()
