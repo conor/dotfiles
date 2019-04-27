@@ -41,6 +41,7 @@ cask "numi"
 cask "iina"
 cask "now"
 cask "ivpn"
+cask "kap"
 mas "Contrast", id: 1254981365
 mas "iA Writer", id: 775737590
 mas "Noizio", id: 928871589
