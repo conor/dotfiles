@@ -23,7 +23,8 @@ Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', {'for': 'javascript'}
+Plug 'mxw/vim-jsx', {'for': ['javascript', 'typescript']}
+Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'typescript'] }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary'
