@@ -110,8 +110,6 @@ try
 catch
 endtry
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
   exe "normal mz"
