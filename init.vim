@@ -15,6 +15,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'sheerun/vim-polyglot'
 Plug 'ayu-theme/ayu-vim'
+Plug 'mhartington/oceanic-next'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-signify'
 Plug 'prettier/vim-prettier', {
@@ -29,6 +30,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neco-vim'
 Plug 'Shougo/neoinclude.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
+Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -121,10 +124,9 @@ if (has("termguicolors"))
 endif
 
 " Theme
-let ayucolor="mirage"
 syntax enable
 set background=dark
-colorscheme ayu
+colorscheme OceanicNext
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Spaces And Tabs, and Indentation
@@ -172,6 +174,27 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Toggle maximizing pane
+nnoremap <C-W>O :call MaximizeToggle()<CR>
+nnoremap <C-W>o :call MaximizeToggle()<CR>
+nnoremap <C-W><C-O> :call MaximizeToggle()<CR>
+
+function! MaximizeToggle()
+  if exists("s:maximize_session")
+    exec "source " . s:maximize_session
+    call delete(s:maximize_session)
+    unlet s:maximize_session
+    let &hidden=s:maximize_hidden_save
+    unlet s:maximize_hidden_save
+  else
+    let s:maximize_hidden_save = &hidden
+    let s:maximize_session = tempname()
+    set hidden
+    exec "mksession! " . s:maximize_session
+    only
+  endif
+endfunction
 
 " Disable arrow keys
 noremap <right> <Nop>
@@ -254,3 +277,8 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Elixir Support
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:mix_format_on_save = 1

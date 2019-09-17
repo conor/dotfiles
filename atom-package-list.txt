@@ -1,10 +1,6 @@
 NewFirewatch-syntax@1.2.0
 atom-ide-ui@0.13.0
-framer-syntax@1.1.0
-framer-ui@2.0.0
-handsome-light-syntax@0.3.4
 ide-typescript@0.8.0
-language-elixir@0.22.1
 language-fish-shell@1.1.0
 midnight-owl-syntax@0.1.0
 moonlight@0.11.0

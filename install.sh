@@ -30,6 +30,10 @@ link_config() {
   link_to $(pwd)/$2 ~/.config/$1/$2
 }
 
+link_vscode() {
+  link_to $(pwd)/VSCode/$1 ~/Library/Application\ Support/Code/User/$1
+}
+
 ###############################################################################
 # Preparation
 ###############################################################################
@@ -77,6 +81,9 @@ link_config fish fishfile
 link_config fish config.fish
 link_dotfile gitconfig
 link_dotfile tmux.conf
+link_vscode settings.json
+link_vscode keybindings.json
+link_vscode snippets
 
 echo ""
 echo "Updating macOS…"
