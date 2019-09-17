@@ -21,10 +21,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mhinz/vim-signify'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-Plug 'othree/yajs.vim', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', {'for': ['javascript', 'typescript']}
-Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript', 'typescript'] }
+  \ 'for': ['javascript', 'javascript.jsx', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'othree/yajs.vim', { 'for': ['javascript.jsx', 'javascript'] }
+Plug 'mxw/vim-jsx', {'for': ['javascript.jsx', 'javascript', 'typescript']}
+Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript.jsx', 'javascript', 'typescript'] }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary'
