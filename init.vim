@@ -13,27 +13,40 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Editor Packages
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-commentary'
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+
+" UI Packages
 Plug 'ayu-theme/ayu-vim'
 Plug 'mhartington/oceanic-next'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
+
+" Autocomplete Packages
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/neco-vim'
+Plug 'Shougo/neoinclude.vim'
+
+" Git Packages
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+
+" Tmux Packages
+Plug 'christoomey/vim-tmux-navigator'
+
+" Typescript / Javascript Packages
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'javascript.jsx', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 Plug 'othree/yajs.vim', { 'for': ['javascript.jsx', 'javascript'] }
 Plug 'mxw/vim-jsx', {'for': ['javascript.jsx', 'javascript', 'typescript']}
 Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['javascript.jsx', 'javascript', 'typescript'] }
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-commentary'
-Plug 'jiangmiao/auto-pairs'
-Plug 'alvan/vim-closetag'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/neco-vim'
-Plug 'Shougo/neoinclude.vim'
-Plug 'christoomey/vim-tmux-navigator'
+
+" Elixir Packages
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
 
