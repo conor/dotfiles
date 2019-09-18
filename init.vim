@@ -30,6 +30,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neco-vim'
 Plug 'Shougo/neoinclude.vim'
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+
+" Linting Packages
+Plug 'dense-analysis/ale'
 
 " Git Packages
 Plug 'mhinz/vim-signify'
@@ -256,6 +260,18 @@ let g:ctrlp_working_path = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_map = '<leader><leader>'
 let g:ctrlp_cmd = 'CtrlP'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Linter Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+
+let g:ale_fixers = {
+\    'javascript': ['eslint'],
+\}
+let g:ale_fix_on_save = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git Settings
