@@ -192,11 +192,19 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap gV `[v`]
 " Clear current search
 nnoremap <leader><CR> :nohlsearch<CR>
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NOTE: Remove netrw_mapping to enable quick pane navigation
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup netrw_mapping
+  autocmd!
+  autocmd filetype netrw call NetrwMapping()
+augroup END
+
+function! NetrwMapping()
+  nnoremap <buffer> <c-l> :wincmd l<cr>
+endfunction
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Toggle maximizing pane
 nnoremap <C-W>O :call MaximizeToggle()<CR>
