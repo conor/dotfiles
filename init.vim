@@ -305,7 +305,7 @@ let g:signify_sign_changedelete      = g:signify_sign_change
 " Javascript Support
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.md PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.md,*.html PrettierAsync
 let g:polyglot_disabled = ['javascript']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
