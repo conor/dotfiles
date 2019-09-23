@@ -85,6 +85,7 @@ set cmdheight=1                                    " Set height of command line
 set so=10                                          " Set 10 lines to the cursor - when moving vertically using j/k
 set showcmd                                        " Show command in bottom bar
 set cursorline                                     " Highlight current line
+set cursorcolumn                                   " Highlight current column
 set wildmenu                                       " Visual autocomplete for command menu
 set lazyredraw                                     " Redraw only when we need to
 set showmatch                                      " Highlight matching [{()}]
@@ -151,6 +152,10 @@ colorscheme OceanicNext
 let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 
+" Current line/column highlight
+"#142027
+:hi CursorLine   cterm=NONE ctermbg=black guibg=#16252b
+:hi CursorColumn cterm=NONE ctermbg=black guibg=#16252b
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Spaces And Tabs, and Indentation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
