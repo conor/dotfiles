@@ -149,13 +149,23 @@ set background=dark
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
+
+" Configure airline colorscheme
 let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 
+" Cursor highlight
+:hi! GuiCursor   cterm=NONE ctermbg=Yellow guibg=#fac862 ctermfg=Black guifg=#16252b
+:hi! Cursor   cterm=NONE ctermbg=Yellow guibg=#fac862 ctermfg=Black guifg=#16252b
+:hi! iCursor cterm=NONE ctermbg=Yellow guibg=#fac862 ctermfg=Black guifg=#16252b
 " Current line/column highlight
-"#142027
-:hi CursorLine   cterm=NONE ctermbg=black guibg=#16252b
-:hi CursorColumn cterm=NONE ctermbg=black guibg=#16252b
+:hi! CursorLine   cterm=NONE ctermbg=Black guibg=#16252b
+:hi! CursorColumn cterm=NONE ctermbg=Black guibg=#16252b
+
+" Popover menu highlight
+:hi! Pmenu cterm=NONE ctermbg=Black guibg=#16252b
+:hi! PmenuSel cterm=NONE ctermbg=Yellow guibg=#fac862 ctermfg=Black guifg=#16252b
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Spaces And Tabs, and Indentation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
