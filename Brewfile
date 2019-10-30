@@ -4,12 +4,11 @@
 
 tap "heroku/brew"
 
-brew "fish"
 brew "git"
-brew "neovim"
-brew "rbenv"
-brew "python"
-brew "python@2"
+# brew "fish"
+# brew "neovim"
+# brew "python"
+# brew "python@2"
 brew "ripgrep"
 brew "tmux"
 
