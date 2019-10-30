@@ -43,3 +43,4 @@ mas "Tweetbot", id: 1384080005
 mas "Newton", id: 1059655371
 mas "Numbers", id: 409203825
 mas "WhatsApp", id: 1147396723
+mas "Firewatch", id: 1164603847
