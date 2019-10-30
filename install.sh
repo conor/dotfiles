@@ -56,12 +56,6 @@ echo "Hello $(whoami)! Let's get you set up."
 # Set the colorscheme of terminal
 bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 
-# Set up my work directory
-echo ""
-echo "Creating ~/dev"
-mkdir -p ~/dev
-touch ~/dev/.metadata_never_index
-
 echo ""
 echo "Linking dotfiles… "
 mkdir -p ~/.config/nvim
@@ -89,13 +83,6 @@ if ! command -v brew > /dev/null 2>&1; then
   brew analytics off
 else
   echo "Homebrew already installed."
-fi
-
-if ! [ -x "$(command -v n)" ]; then
-  curl -L https://git.io/n-install | bash
-  echo 'n-install and n are now installed'
-else
-  echo 'n is already installed'
 fi
 
 echo "Installing tools, mac app store, and other apps via Homebrew…"
@@ -130,11 +117,9 @@ else
   printf "\nFish shell and Fisher already installed"
 fi
 
-# Install or update Tuple.app
-curl -L https://git.io/tuple-install | bash
-
 echo ""
 echo ""
 echo "Complete. Ready to code."
 echo "Important: Run fisher to load fish plugins."
 echo "Important: Run rbenv init."
+echo "touch ~/Documents/*/.metadata_never_index to stop spotlight indexing node_modules, etc…"
