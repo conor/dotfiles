@@ -34,7 +34,6 @@ mas "Things3", id: 904280696
 mas "Bear", id: 1091189122
 cask "iterm2"
 cask "google-chrome"
-cask "atom"
 cask "dropbox"
 cask "sketch"
 cask "numi"
@@ -42,7 +41,6 @@ cask "iina"
 cask "now"
 cask "ivpn"
 cask "kap"
-cask "visual-studio-code"
 mas "Contrast", id: 1254981365
 mas "iA Writer", id: 775737590
 mas "Noizio", id: 928871589

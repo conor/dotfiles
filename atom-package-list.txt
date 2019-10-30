@@ -1,9 +1,0 @@
-NewFirewatch-syntax@1.2.0
-atom-ide-ui@0.13.0
-ide-typescript@0.8.0
-language-fish-shell@1.1.0
-midnight-owl-syntax@0.1.0
-moonlight@0.11.0
-teletype@0.13.3
-vim-mode-plus@1.36.0
-

@@ -30,10 +30,6 @@ link_config() {
   link_to $(pwd)/$2 ~/.config/$1/$2
 }
 
-link_vscode() {
-  link_to $(pwd)/VSCode/$1 ~/Library/Application\ Support/Code/User/$1
-}
-
 ###############################################################################
 # Preparation
 ###############################################################################
@@ -68,22 +64,13 @@ touch ~/dev/.metadata_never_index
 
 echo ""
 echo "Linking dotfiles… "
-# link_dotfile config
-# link_dotfile atom
 mkdir -p ~/.config/nvim
-mkdir -p ~/.config/atom
 mkdir -p ~/.config/fish
 link_config nvim init.vim
-link_config atom keymap.cson
-link_config atom github.cson
-link_config atom config.cson
 link_config fish fishfile
 link_config fish config.fish
 link_dotfile gitconfig
 link_dotfile tmux.conf
-link_vscode settings.json
-link_vscode keybindings.json
-link_vscode snippets
 
 echo ""
 echo "Updating macOS…"
@@ -145,10 +132,6 @@ fi
 
 # Install or update Tuple.app
 curl -L https://git.io/tuple-install | bash
-
-
-# apm install --packages-file atom-package-list.txt
-# apm list --installed --bare > atom-package-list.txt
 
 echo ""
 echo ""
