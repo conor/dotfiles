@@ -93,28 +93,29 @@ brew cleanup
 
 # echo "Installing Neovim python dependencies…"
 # pip install --upgrade pip
-# pip3 install --upgrade pip
+pip3 install --upgrade pip
 # pip3 install --user --upgrade neovim
 # pip install --user --upgrade neovim
+pip3 install --user --upgrade pynvim
 
 # Vim plug
-# if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
-#   printf "\nInstalling vim-plug"
-#   curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-#     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-# fi
-# nvim +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
+if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
+  printf "\nInstalling vim-plug"
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+nvim +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
 
-# if ! grep -q "fish" /etc/shells; then
-#   printf "\nChanging shell to Fish"
-#   echo /usr/local/bin/fish | sudo tee -a /etc/shells
-#   chsh -s /usr/local/bin/fish
+if ! grep -q "fish" /etc/shells; then
+  printf "\nChanging shell to Fish"
+  echo /usr/local/bin/fish | sudo tee -a /etc/shells
+  chsh -s /usr/local/bin/fish
 
-#   printf "\nInstall Fisher"
-#   curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-# else
-#   printf "\nFish shell and Fisher already installed"
-# fi
+  printf "\nInstall Fisher"
+  curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+else
+  printf "\nFish shell and Fisher already installed"
+fi
 
 echo ""
 echo ""

@@ -5,19 +5,17 @@
 tap "heroku/brew"
 
 brew "git"
-# brew "fish"
-# brew "neovim"
-# brew "python"
-# brew "python@2"
+brew "fish"
+brew "neovim"
+brew "python3"
 brew "ripgrep"
 brew "tmux"
 
-# Install Cask.
-tap "caskroom/cask"
 # Install Mac App Store CLI.
 brew 'mas'
 # Install Caskroom for beta applications.
-tap 'caskroom/versions'
+tap 'homebrew/cask-versions'
+tap 'homebrew/cask-fonts'
 
 cask_args appdir: "/Applications"
 
@@ -33,6 +31,7 @@ cask "iina"
 cask "ivpn"
 cask "kap"
 cask "soulver"
+cask "font-source-code-pro"
 mas "Contrast", id: 1254981365
 mas "iA Writer", id: 775737590
 mas "Slack", id: 803453959
