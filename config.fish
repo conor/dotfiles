@@ -28,7 +28,7 @@ set --export GIT_EDITOR "nvim -f"
 # eval (direnv hook fish)
 
 # Setup rbenv
-status --is-interactive; and source (rbenv init -|psub)
+# status --is-interactive; and source (rbenv init -|psub)
 
 # Setup n-install
 set -x N_PREFIX "$HOME/n"    # equivalent of export N_PREFIX="$HOME/n";
