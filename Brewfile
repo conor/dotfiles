@@ -3,6 +3,7 @@
 # brew bundle
 
 tap "heroku/brew"
+tap 'Schniz/tap'
 
 brew "git"
 brew "fish"
@@ -10,6 +11,7 @@ brew "neovim"
 brew "python3"
 brew "ripgrep"
 brew "tmux"
+brew "fnm"
 
 # Install Mac App Store CLI.
 brew 'mas'
