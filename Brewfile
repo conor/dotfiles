@@ -12,6 +12,7 @@ brew "python3"
 brew "ripgrep"
 brew "tmux"
 brew "fnm"
+brew "sourcekitten"
 
 # Install Mac App Store CLI.
 brew 'mas'

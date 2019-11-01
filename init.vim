@@ -30,6 +30,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neco-vim'
 Plug 'Shougo/neoinclude.vim'
+Plug 'landaire/deoplete-swift'
 " Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 
 " Linting Packages
@@ -53,6 +54,8 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main', 'for': ['jav
 " Elixir Packages
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'mhinz/vim-mix-format', { 'for': 'elixir' }
+
+Plug 'conor/swift.vim', { 'for': 'swift' }
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -321,7 +324,7 @@ let g:signify_sign_changedelete      = g:signify_sign_change
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.md,*.html PrettierAsync
-let g:polyglot_disabled = ['javascript']
+let g:polyglot_disabled = ['javascript', 'swift']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python Support
@@ -336,6 +339,8 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_smart_case = 1
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" Jump to the first placeholder by typing `<C-j>`.
+autocmd FileType swift imap <buffer> <C-j> <Plug>(deoplete_swift_jump_to_placeholder)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Elixir Support
