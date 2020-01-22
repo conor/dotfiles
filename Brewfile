@@ -13,6 +13,8 @@ brew "ripgrep"
 brew "tmux"
 brew "fnm"
 brew "sourcekitten"
+brew "yarn"
+brew "watchman"
 
 # Install Mac App Store CLI.
 brew 'mas'

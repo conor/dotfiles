@@ -40,6 +40,9 @@ Plug 'dense-analysis/ale'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 
+" Search Packages
+Plug 'eugen0329/vim-esearch'
+
 " Tmux Packages
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -88,7 +91,7 @@ set cmdheight=1                                    " Set height of command line
 set so=10                                          " Set 10 lines to the cursor - when moving vertically using j/k
 set showcmd                                        " Show command in bottom bar
 set cursorline                                     " Highlight current line
-set cursorcolumn                                   " Highlight current column
+" set cursorcolumn                                   " Highlight current column
 set wildmenu                                       " Visual autocomplete for command menu
 set lazyredraw                                     " Redraw only when we need to
 set showmatch                                      " Highlight matching [{()}]
@@ -346,3 +349,15 @@ autocmd FileType swift imap <buffer> <C-j> <Plug>(deoplete_swift_jump_to_placeho
 " Elixir Support
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:mix_format_on_save = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Search Packages
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:esearch = {
+  \ 'adapter':          'rg',
+  \ 'backend':          'nvim',
+  \ 'out':              'win',
+  \ 'batch_size':       1000,
+  \ 'use':              ['visual', 'hlsearch', 'last'],
+  \ 'default_mappings': 1,
+  \}

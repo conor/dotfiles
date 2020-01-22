@@ -36,6 +36,7 @@ set -x N_PREFIX "$HOME/n"    # equivalent of export N_PREFIX="$HOME/n";
 if not contains -- $N_PREFIX/bin $PATH
   set PATH $PATH $N_PREFIX/bin
 end
+
 # fnm
 fnm env --multi | source
 
