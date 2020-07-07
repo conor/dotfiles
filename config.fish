@@ -18,7 +18,7 @@ alias gps="git push"
 alias gpl="git pull"
 
 # Config for Pure theme
-set pure_symbol_prompt '→'
+set pure_symbol_prompt 'λ'
 
 # Config for Neovim
 set --export EDITOR "nvim -f"

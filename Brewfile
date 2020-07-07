@@ -37,6 +37,8 @@ cask "ivpn"
 cask "kap"
 cask "soulver"
 cask "font-source-code-pro"
+cask "font-hasklig"
+cask "font-jetbrains-mono"
 mas "Contrast", id: 1254981365
 mas "iA Writer", id: 775737590
 mas "Slack", id: 803453959
