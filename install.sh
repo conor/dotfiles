@@ -58,6 +58,8 @@ bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 echo ""
 echo "Linking dotfiles… "
 link_dotfile gitconfig
+link_config fish fishfile
+link_config fish config.fish
 
 mkdir -p ~/.config/nvim
 link_config nvim init.vim
