@@ -1,0 +1,10 @@
+[user]
+    name = Conor Wade
+    email = conorwade@gmail.com
+    username = conor
+[core]
+    editor = nvim
+[log]
+  date = relative
+[format]
+  pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s

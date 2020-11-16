@@ -57,8 +57,7 @@ bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 
 echo ""
 echo "Linking dotfiles… "
-# TODO: Add symlinks
-
+link_dotfile gitconfig
 
 echo ""
 echo "Updating macOS…"
