@@ -12,7 +12,7 @@ set -e
 link_to() {
   if [ ! -e "$2" ]; then
     if [ ! -e "$1" ]; then
-			echo ""
+            echo ""
       echo "WARNING: cannot link $1 because it does not exist"
     else
       ln -s "$1" "$2"
@@ -57,13 +57,8 @@ bash -c  "$(curl -sLo- https://git.io/vQgMr)"
 
 echo ""
 echo "Linking dotfiles… "
-mkdir -p ~/.config/nvim
-mkdir -p ~/.config/fish
-link_config nvim init.vim
-link_config fish fishfile
-link_config fish config.fish
-link_dotfile gitconfig
-link_dotfile tmux.conf
+# TODO: Add symlinks
+
 
 echo ""
 echo "Updating macOS…"
@@ -78,7 +73,7 @@ fi
 
 if ! command -v brew > /dev/null 2>&1; then
   echo "Installing homebrew… "
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   brew analytics off
 else
   echo "Homebrew already installed."
@@ -91,31 +86,7 @@ brew bundle
 brew upgrade
 brew cleanup
 
-# echo "Installing Neovim python dependencies…"
-# pip install --upgrade pip
-pip3 install --upgrade pip
-# pip3 install --user --upgrade neovim
-# pip install --user --upgrade neovim
-pip3 install --user --upgrade pynvim
-
-# Vim plug
-if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
-  printf "\nInstalling vim-plug"
-  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
-nvim +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
-
-if ! grep -q "fish" /etc/shells; then
-  printf "\nChanging shell to Fish"
-  echo /usr/local/bin/fish | sudo tee -a /etc/shells
-  chsh -s /usr/local/bin/fish
-
-  printf "\nInstall Fisher"
-  curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-else
-  printf "\nFish shell and Fisher already installed"
-fi
+# TODO Neovim and Fish installation
 
 echo ""
 echo ""
