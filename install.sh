@@ -59,6 +59,9 @@ echo ""
 echo "Linking dotfiles… "
 link_dotfile gitconfig
 
+mkdir -p ~/.config/nvim
+link_config nvim init.vim
+
 echo ""
 echo "Updating macOS…"
 sudo softwareupdate -i -a
@@ -86,6 +89,14 @@ brew upgrade
 brew cleanup
 
 # TODO Neovim and Fish installation
+# Vim plug
+if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
+  printf "\nInstalling vim-plug"
+  curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+nvim +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
+
 
 echo ""
 echo ""
