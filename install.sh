@@ -88,7 +88,6 @@ brew bundle
 brew upgrade
 brew cleanup
 
-# TODO Neovim and Fish installation
 # Vim plug
 if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
   printf "\nInstalling vim-plug"
@@ -97,6 +96,16 @@ if [ ! -e ~/.local/share/nvim/site/autoload/plug.vim ]; then
 fi
 nvim +PlugInstall +PlugUpgrade +PlugUpdate +PlugClean! +UpdateRemotePlugins +qall
 
+if ! grep -q "fish" /etc/shells; then
+  printf "\nChanging shell to Fish"
+  echo /usr/local/bin/fish | sudo tee -a /etc/shells
+  chsh -s /usr/local/bin/fish
+
+  printf "\nInstall Fisher"
+  curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+else
+  printf "\nFish shell and Fisher already installed"
+fi
 
 echo ""
 echo ""
