@@ -14,6 +14,7 @@ cask "google-chrome"
 cask "firefox"
 cask "ivpn"
 cask "soulver"
+cask "swiftformat-for-xcode"
 
 # MAS apps
 mas "Reeder 5", id: 1529448980

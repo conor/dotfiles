@@ -1,0 +1,2 @@
+--disable andOperator,wrapMultilineStatementBraces
+--enable isEmpty,markTypes,organizeDeclarations,wrapSwitchCases
