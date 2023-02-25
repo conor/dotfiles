@@ -1,0 +1,48 @@
+{
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.editor.showTabs": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.activityBar.visible": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false,
+
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.colorDecorators": false,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.tabSize": 2,
+  "editor.fontSize": 13,
+  "editor.codeLensFontSize": 13,
+  "editor.inlineHints.fontSize": 13,
+  "editor.lineHeight": 20,
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.codeLensFontFamily": "'SF Mono', monospace",
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.renderLineHighlight": "all",
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.suggestSelection": "first",
+
+  "debug.console.fontFamily": "'SF Mono', monospace",
+  "debug.console.fontSize": 13,
+  "debug.console.lineHeight": 13,
+
+  "breadcrumbs.enabled": false,
+
+  "scm.diffDecorationsGutterWidth": 2,
+  "scm.diffDecorationsGutterVisibility": "always",
+  "scm.diffDecorations": "gutter",
+
+  "git.autofetch": true,
+
+  "amVim.smartRelativeLineNumbers": true,
+  "git.confirmSync": false,
+  "editor.guides.indentation": false,
+  "editor.inlineSuggest.enabled": true
+}
