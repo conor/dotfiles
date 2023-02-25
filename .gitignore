@@ -1,0 +1,9 @@
+# Git
+/git/.gitconfig
+
+# Iterm2
+/iterm2/AppSupport
+
+#  ZSH
+/zsh/.zsh_sessions
+/zsh/.zsh_history
