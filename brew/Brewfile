@@ -16,7 +16,7 @@ cask "iterm2"
 cask "sketch"
 cask "soulver"
 cask "visual-studio-code"
-cask "microsoft-edge"
+# cask "microsoft-edge" # Installs a bunch of crappy background apps
 
 # App Store
 mas "Contrast", id: 1254981365
