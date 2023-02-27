@@ -3,10 +3,12 @@
 Download/Clone the repo and rename to .config
 
 ## ZSH
-1. `ln -s ~/.config/zsh/.zshenv`
+
+1. `ln -s ~/.config/zsh/.zshenv ~/.zshenv`
 
 ## Git
-1. `ln -s ~/.config/git/.gitconfig`
+
+1. `ln -s ~/.config/git/.gitconfig ~/.gitconfig`
 2. `git config --global core.excludesfile ~/.config/git/.gitignore`
 
 ## VS Code
