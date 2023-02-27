@@ -4,6 +4,11 @@
 
 Download/Clone the repo and rename to .config
 
+## Homebrew
+
+1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. `brew bundle install`
+
 ## ZSH
 
 1. `ln -s ~/.config/zsh/.zshenv ~/.zshenv`

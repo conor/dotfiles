@@ -1,0 +1,27 @@
+tap "homebrew/bundle"
+tap "mas-cli/tap"
+
+# CLI
+brew "git"
+brew "pure"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+brew "mas-cli/tap/mas"
+
+# Apps
+cask "brave-browser"
+cask "firefox"
+cask "iterm2"
+cask "sketch"
+cask "soulver"
+cask "visual-studio-code"
+
+# App Store
+mas "Contrast", id: 1254981365
+mas "Developer", id: 640199958
+mas "Pixelmator Pro", id: 1289583905
+mas "Reeder", id: 1529448980
+mas "Slack", id: 803453959
+mas "Things", id: 904280696
+mas "Xcode", id: 497799835
