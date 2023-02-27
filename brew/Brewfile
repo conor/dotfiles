@@ -16,6 +16,7 @@ cask "iterm2"
 cask "sketch"
 cask "soulver"
 cask "visual-studio-code"
+cask "microsoft-edge"
 
 # App Store
 mas "Contrast", id: 1254981365
