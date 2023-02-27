@@ -2,7 +2,7 @@
 
 ## Download
 
-Download/Clone the repo and rename to .config
+1. Download/Clone the repo and rename to .config: `git clone git@github.com:conor/dotfiles.git .config`
 
 ## Homebrew
 
