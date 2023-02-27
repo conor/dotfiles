@@ -25,3 +25,8 @@ Download/Clone the repo and rename to .config
 4. `ln -s ~/.config/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json`
 5. `defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false`
 
+## macOS UI
+
+### Finder
+
+1. `defaults write com.apple.finder FXPreferredViewStyle -string "clmv"`
