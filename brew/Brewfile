@@ -16,6 +16,7 @@ cask "iterm2"
 cask "sketch"
 cask "soulver"
 cask "visual-studio-code"
+cask "arc"
 # cask "microsoft-edge" # Installs a bunch of crappy background apps
 
 # App Store

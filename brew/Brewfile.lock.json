@@ -252,7 +252,7 @@
         }
       },
       "firefox": {
-        "version": "110.0",
+        "version": "110.0.1",
         "options": {
           "full_name": "firefox"
         }
@@ -286,6 +286,12 @@
         "options": {
           "full_name": "microsoft-edge"
         }
+      },
+      "arc": {
+        "version": "0.91.1,37373",
+        "options": {
+          "full_name": "arc"
+        }
       }
     },
     "mas": {
@@ -299,7 +305,7 @@
       },
       "Pixelmator Pro": {
         "id": "1289583905",
-        "version": "3.2.3"
+        "version": "3.3"
       },
       "Reeder": {
         "id": "1529448980",
@@ -322,7 +328,7 @@
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.3",
+        "HOMEBREW_VERSION": "4.0.4",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.2.0.0.1.1668646533",
