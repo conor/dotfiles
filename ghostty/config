@@ -1,0 +1,5 @@
+font-family = "iA Writer Mono V"
+theme = "tokyonight_moon"
+adjust-cell-height = "30%"
+adjust-cell-width = "-10%"
+macos-option-as-alt = true
