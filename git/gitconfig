@@ -3,13 +3,15 @@
 [user]
     name = Conor Wade
     email = conor@users.noreply.github.com
-    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMtFBBpDjYcWbniqxESEhYtFeH/MYAgUrdF0kaAeb4i7
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKBTCe8HBTbilnVLzvHpJr5njOsdPCZNtCOCKI3fyXDu
 [gpg]
     format = ssh
 [gpg "ssh"]
-    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 [commit]
     gpgsign = true
+
+
 
 # [diff]
 #     tool = nvimdiff
