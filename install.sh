@@ -108,5 +108,9 @@ create_symlink "$DOTFILES_DIR/git/gitignore_global" "$HOME/.gitignore_global"
 echo "Setting up Ghostty configuration..."
 create_symlink "$DOTFILES_DIR/ghostty" "$HOME/.config/ghostty"
 
+# Symlink mise files
+echo "Setting up Mise configuration..."
+create_symlink "$DOTFILES_DIR/mise" "$HOME/.config/mise"
+
 echo "Dotfiles installation complete! Some changes may require a restart to take effect."
 echo "You may need to open a new terminal window for all changes to apply."
