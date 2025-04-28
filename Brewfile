@@ -6,6 +6,7 @@ brew "ripgrep"
 brew "tree"
 brew "starship"
 brew "gh"
+brew "mise"
 
 # Casks
 cask "1password"
