@@ -13,6 +13,7 @@ cask "1password"
 cask "visual-studio-code"
 cask "ghostty"
 cask "claude"
+cask "figma"
 
 # VSCode Extensions
 vscode "bradlc.vscode-tailwindcss"
