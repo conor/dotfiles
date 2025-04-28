@@ -1,12 +1,17 @@
-function __fish_mise_needs_command
-    set -l cmd (commandline -opc)
-    if test (count $cmd) -eq 1
-        return 0
-    end
+# if "usage" is not installed show an error
+if ! command -v usage &> /dev/null
+    echo >&2
+    echo "Error: usage CLI not found. This is required for completions to work in mise." >&2
+    echo "See https://usage.jdx.dev for more information." >&2
     return 1
 end
 
-# Adding completions for mise commands
-if command -v mise >/dev/null
-    mise completion fish | source
+if ! set -q _usage_spec_mise_2025_4_11
+  set -g _usage_spec_mise_2025_4_11 (mise usage | string collect)
+end
+set -l tokens
+if commandline -x >/dev/null 2>&1
+    complete -xc mise -a '(usage complete-word --shell fish -s "$_usage_spec_mise_2025_4_11" -- (commandline -xpc) (commandline -t))'
+else
+    complete -xc mise -a '(usage complete-word --shell fish -s "$_usage_spec_mise_2025_4_11" -- (commandline -opc) (commandline -t))'
 end
