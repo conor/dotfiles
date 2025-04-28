@@ -11,6 +11,7 @@ brew "gh"
 cask "1password"
 cask "visual-studio-code"
 cask "ghostty"
+cask "claude"
 
 # VSCode Extensions
 vscode "bradlc.vscode-tailwindcss"
