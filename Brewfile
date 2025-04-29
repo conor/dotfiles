@@ -10,7 +10,7 @@ brew "mise"
 brew "lynx"
 
 # Casks
-cask "1password"
+# cask "1password"
 cask "1password-cli"
 cask "visual-studio-code"
 cask "ghostty"
