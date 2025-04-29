@@ -7,6 +7,7 @@ brew "tree"
 brew "starship"
 brew "gh"
 brew "mise"
+brew "lynx"
 
 # Casks
 cask "1password"
