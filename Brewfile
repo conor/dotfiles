@@ -23,6 +23,9 @@ cask "font-sf-compact"
 cask "font-sf-mono"
 cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-new-york"
+cask "font-ia-writer-mono"
+cask "font-ia-writer-duo"
+cask "font-ia-writer-quattro"
 
 
 # Mac App Store applications via mas (use app IDs)
