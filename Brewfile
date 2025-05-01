@@ -8,6 +8,7 @@ brew "starship"
 brew "gh"
 brew "mise"
 brew "lynx"
+brew "awscli"
 
 # Casks
 # cask "1password"
@@ -16,6 +17,7 @@ cask "visual-studio-code"
 cask "ghostty"
 cask "claude"
 cask "figma"
+cask "altair-graphql-client"
 
 # Fonts
 cask "font-sf-pro"
