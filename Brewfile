@@ -11,13 +11,15 @@ brew "lynx"
 brew "awscli"
 
 # Casks
-# cask "1password"
+# cask "1password" Uncomment next time I install from scratch
 cask "1password-cli"
 cask "visual-studio-code"
 cask "ghostty"
 cask "claude"
 cask "figma"
 cask "altair-graphql-client"
+cask "zen-browser"
+# cask "alcove" Uncomment next time I install from scratch
 
 # Fonts
 cask "font-sf-pro"
@@ -41,6 +43,7 @@ mas "Apple Developer", id: 640199958        # Apple Developer (official Apple De
 mas "1Password for Safari", id: 1569813296  # 1Password for Safari
 mas "Pages", id: 409201541                  # Pages (word processor)
 mas "Numbers", id: 409203825                # Numbers (spreadsheet)
+mas "Klack", id: 6446206067		    # Klack (makes mechanical keyboard sounds) Might delete later
 
 # VSCode Extensions
 vscode "bradlc.vscode-tailwindcss"
