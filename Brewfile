@@ -20,6 +20,7 @@ cask "figma"
 cask "altair-graphql-client"
 cask "zen-browser"
 # cask "alcove" Uncomment next time I install from scratch
+cask "comfyui"
 
 # Fonts
 cask "font-sf-pro"
