@@ -45,6 +45,7 @@ mas "1Password for Safari", id: 1569813296  # 1Password for Safari
 mas "Pages", id: 409201541                  # Pages (word processor)
 mas "Numbers", id: 409203825                # Numbers (spreadsheet)
 mas "Klack", id: 6446206067		    # Klack (makes mechanical keyboard sounds) Might delete later
+mas "Pixelmator Pro", id: 1289583905        # Pixelmator Pro (image editor)
 
 # VSCode Extensions
 vscode "bradlc.vscode-tailwindcss"
