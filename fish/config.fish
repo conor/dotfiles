@@ -13,3 +13,4 @@ if command -v mise >/dev/null
 else
     echo "Warning: mise is not installed. Run 'brew bundle' to install it."
 end
+alias claude="/Users/cw/.claude/local/claude"
