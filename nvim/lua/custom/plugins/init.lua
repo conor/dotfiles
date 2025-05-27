@@ -6,4 +6,5 @@ return {
   require 'custom.plugins.fugitive',
   require 'custom.plugins.copilot',
   require 'custom.plugins.copilot-chat',
+  require 'custom.plugins.clojure',
 }

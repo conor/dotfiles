@@ -9,6 +9,8 @@ brew "gh"
 brew "mise"
 brew "lynx"
 brew "awscli"
+brew "clojure/tools/clojure"
+brew "borkdude/brew/clj-kondo"
 
 # Casks
 # cask "1password" Uncomment next time I install from scratch
@@ -21,6 +23,7 @@ cask "altair-graphql-client"
 cask "zen-browser"
 # cask "alcove" Uncomment next time I install from scratch
 cask "comfyui"
+cask "temurin@21"
 
 # Fonts
 cask "font-sf-pro"
