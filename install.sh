@@ -112,5 +112,9 @@ create_symlink "$DOTFILES_DIR/ghostty" "$HOME/.config/ghostty"
 echo "Setting up Mise configuration..."
 create_symlink "$DOTFILES_DIR/mise" "$HOME/.config/mise"
 
+# Symlink opencode files
+echo "Setting up OpenCode configuration..."
+create_symlink "$DOTFILES_DIR/opencode" "$HOME/.config/opencode"
+
 echo "Dotfiles installation complete! Some changes may require a restart to take effect."
 echo "You may need to open a new terminal window for all changes to apply."

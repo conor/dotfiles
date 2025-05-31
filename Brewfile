@@ -11,6 +11,7 @@ brew "lynx"
 brew "awscli"
 brew "clojure/tools/clojure"
 brew "borkdude/brew/clj-kondo"
+brew "sst/tap/opencode"
 
 # Casks
 # cask "1password" Uncomment next time I install from scratch

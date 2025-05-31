@@ -1,0 +1,29 @@
+{
+  "data": {
+    "directory": ".opencode"
+  },
+  "providers": {
+    "anthropic": {
+      "disabled": false
+    },
+    "openai": {
+      "disabled": false
+    }
+  },
+  "agents": {
+    "coder": {
+      "model": "claude-4-sonnet",
+      "maxTokens": 8000
+    },
+    "task": {
+      "model": "claude-4-sonnet", 
+      "maxTokens": 5000
+    },
+    "title": {
+      "model": "claude-4-sonnet",
+      "maxTokens": 80
+    }
+  },
+  "debug": false,
+  "debugLSP": false
+}
