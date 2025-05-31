@@ -13,4 +13,7 @@ if command -v mise >/dev/null
 else
     echo "Warning: mise is not installed. Run 'brew bundle' to install it."
 end
+# Set default editor to Neovim
+set -gx EDITOR nvim
+
 alias claude="/Users/cw/.claude/local/claude"
