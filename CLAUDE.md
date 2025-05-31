@@ -26,6 +26,7 @@ This is a personal dotfiles repository that provides automated setup for a compl
 - `git/` - Git configuration with 1Password SSH signing enabled
 - `ghostty/` - Terminal emulator configuration  
 - `mise/` - Development tool version manager configuration
+- `opencode/` - OpenCode AI coding assistant configuration
 - `Brewfile` - Homebrew package definitions (CLI tools, GUI apps, fonts, VSCode extensions)
 - `install.sh` - Idempotent installation script
 
@@ -43,6 +44,7 @@ All configurations use symlinks to `~/.config/` directories. The install script:
 - **Mise**: Replaces version managers like nvm, rbenv (configured in `mise/config.toml`)
 - **Git**: Uses 1Password for SSH signing, main branch as default
 - **Ghostty**: Fast terminal emulator
+- **OpenCode**: AI coding assistant with Claude 4 Sonnet integration
 
 ## Development Notes
 

@@ -8,6 +8,7 @@ This repository contains my personal dotfiles for setting up a new development e
 - Git configuration
 - Fish shell setup
 - Ghostty terminal configuration
+- OpenCode AI coding assistant configuration
 - Homebrew package management (via Brewfile)
 
 ## Quick Install
