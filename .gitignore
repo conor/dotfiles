@@ -38,3 +38,6 @@ coverage/
 
 # Fish shell
 fish_variables
+
+# OpenCode database files
+.opencode/

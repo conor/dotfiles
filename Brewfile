@@ -25,6 +25,7 @@ cask "zen-browser"
 # cask "alcove" Uncomment next time I install from scratch
 cask "comfyui"
 cask "temurin@21"
+cask "soulver"
 
 # Fonts
 cask "font-sf-pro"
