@@ -17,3 +17,10 @@ end
 set -gx EDITOR nvim
 
 alias claude="/Users/cw/.claude/local/claude"
+
+# pnpm
+set -gx PNPM_HOME "/Users/cw/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
