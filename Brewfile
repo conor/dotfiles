@@ -9,8 +9,6 @@ brew "gh"
 brew "mise"
 brew "lynx"
 brew "awscli"
-brew "clojure/tools/clojure"
-brew "borkdude/brew/clj-kondo"
 brew "sst/tap/opencode"
 
 # Casks
@@ -22,10 +20,9 @@ cask "claude"
 cask "figma"
 cask "altair-graphql-client"
 cask "zen-browser"
-# cask "alcove" Uncomment next time I install from scratch
-cask "comfyui"
-cask "temurin@21"
+cask "alcove"
 cask "soulver"
+cask "sketch"
 
 # Fonts
 cask "font-sf-pro"
