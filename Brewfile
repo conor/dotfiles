@@ -19,10 +19,10 @@ cask "ghostty"
 cask "claude"
 cask "figma"
 cask "altair-graphql-client"
-cask "zen-browser"
 cask "alcove"
 cask "soulver"
 cask "sketch"
+cask "google-chrome"
 
 # Fonts
 cask "font-sf-pro"
