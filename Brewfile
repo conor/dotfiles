@@ -10,6 +10,8 @@ brew "mise"
 brew "lynx"
 brew "awscli"
 brew "sst/tap/opencode"
+brew "pnpm"
+brew "cloudflare-wrangler"
 
 # Casks
 # cask "1password" Uncomment next time I install from scratch
