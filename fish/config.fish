@@ -23,4 +23,5 @@ set -gx PNPM_HOME "/Users/cw/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
+alias p="pnpm"
 # pnpm end
