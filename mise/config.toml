@@ -1,5 +1,5 @@
 [tools]
-node = "24.4.1"
+node = "25.5.0"
 ruby = "latest"
 
 [settings]
