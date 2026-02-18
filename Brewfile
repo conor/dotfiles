@@ -10,6 +10,7 @@ brew "mise"
 brew "lynx"
 brew "awscli"
 brew "sst/tap/opencode"
+brew "pointfreeco/tap/pfw"
 brew "pnpm"
 brew "cloudflare-wrangler"
 
@@ -80,4 +81,3 @@ vscode "tobermory.es6-string-html"
 vscode "usernamehw.errorlens"
 vscode "vscodevim.vim"
 vscode "yoavbls.pretty-ts-errors"
-

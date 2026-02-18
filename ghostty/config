@@ -1,8 +1,17 @@
-font-family = "iA Writer Mono V"
+font-family = "Maple Mono NF"
+font-size = 13
+font-style = Light
+font-style-bold = Regular
+font-style-italic = LightItalic
+font-style-bold-italic = RegularItalic
+font-feature = calt
+font-feature = liga
+font-feature = dlig
 theme = TokyoNight Night
 adjust-cell-height = "30%"
-adjust-cell-width = "-10%"
+adjust-cell-width = "0%"
 macos-option-as-alt = true
+macos-titlebar-style = tabs
 window-padding-x = 12
 window-padding-y = 4
 keybind = shift+enter=text:\n
