@@ -1,58 +1,64 @@
-# TUAs
+tap "borkdude/brew"
+tap "clojure/tools"
+tap "dan-hart/tap"
+tap "pointfreeco/tap"
+tap "sst/tap"
+brew "awscli"
+brew "cloudflare-wrangler"
+brew "colima"
+brew "docker"
+brew "docker-compose"
+brew "elixir"
 brew "fish"
+brew "gh"
 brew "git"
+brew "lynx"
+brew "mas"
+brew "mise"
 brew "neovim"
 brew "ripgrep"
-brew "tree"
-brew "starship"
-brew "gh"
-brew "mise"
-brew "lynx"
-brew "awscli"
-brew "sst/tap/opencode"
-brew "pointfreeco/tap/pfw"
+brew "opencode"
 brew "pnpm"
-brew "cloudflare-wrangler"
-
-# Casks
-# cask "1password" Uncomment next time I install from scratch
+brew "starship"
+brew "tree"
+brew "tree-sitter-cli"
+brew "borkdude/brew/clj-kondo"
+brew "clojure/tools/clojure"
+brew "dan-hart/tap/clings"
+brew "pointfreeco/tap/pfw"
 cask "1password-cli"
-cask "visual-studio-code"
-cask "ghostty"
+cask "alcove"
+cask "altair-graphql-client"
 cask "claude"
 cask "figma"
-cask "altair-graphql-client"
-cask "alcove"
-cask "soulver"
-cask "sketch"
-cask "google-chrome"
-
-# Fonts
-cask "font-sf-pro"
+cask "font-ia-writer-duo"
+cask "font-ia-writer-mono"
+cask "font-ia-writer-quattro"
+cask "font-new-york"
 cask "font-sf-compact"
 cask "font-sf-mono"
 cask "font-sf-mono-nerd-font-ligaturized"
-cask "font-new-york"
-cask "font-ia-writer-mono"
-cask "font-ia-writer-duo"
-cask "font-ia-writer-quattro"
-
-
-# Mac App Store applications via mas (use app IDs)
-mas "Things 3", id: 904280696               # Things 3 (task manager)
-mas "Magnet", id: 441258766                 # Magnet (window manager)
-mas "iA Writer", id: 775737590              # iA Writer (writing app)
-mas "Xcode", id: 497799835                  # Xcode (Apple development IDE)
-mas "Endel", id: 1346247457                 # Endel (focus/sleep sounds)
-mas "NordVPN", id: 905953485                # NordVPN (App Store version, if preferred)
-mas "Apple Developer", id: 640199958        # Apple Developer (official Apple Developer app)
-mas "1Password for Safari", id: 1569813296  # 1Password for Safari
-mas "Pages", id: 409201541                  # Pages (word processor)
-mas "Numbers", id: 409203825                # Numbers (spreadsheet)
-mas "Klack", id: 6446206067		    # Klack (makes mechanical keyboard sounds) Might delete later
-mas "Pixelmator Pro", id: 1289583905        # Pixelmator Pro (image editor)
-
-# VSCode Extensions
+cask "font-sf-pro"
+cask "ghostty"
+cask "google-chrome"
+cask "sketch"
+cask "soulver"
+cask "visual-studio-code"
+mas "1Password for Safari", id: 1569813296
+mas "Developer", id: 640199958
+mas "Endel", id: 1346247457
+mas "Flighty", id: 1358823008
+mas "iA Writer", id: 775737590
+mas "iMovie", id: 408981434
+mas "Klack", id: 6446206067
+mas "Magnet", id: 441258766
+mas "NordVPN", id: 905953485
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 1289583905
+mas "Telegram", id: 747648890
+mas "Things", id: 904280696
+mas "Xcode", id: 497799835
 vscode "bradlc.vscode-tailwindcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "docker.docker"
@@ -69,6 +75,7 @@ vscode "hyrious.import-cost"
 vscode "jakebecker.elixir-ls"
 vscode "kamikillerto.vscode-colorize"
 vscode "mattpocock.ts-error-translator"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-playwright.playwright"
 vscode "ms-vscode-remote.remote-containers"
